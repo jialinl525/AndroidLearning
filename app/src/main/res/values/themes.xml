@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.Recorder" parent="Base.Theme.Recorder" />
+    <style name="SuperUI.noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
 </resources>

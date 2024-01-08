@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.jialin.recorder'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.jialin.recorder"
@@ -31,6 +31,7 @@ android {
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.qmuiteam:qmui:2.0.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'

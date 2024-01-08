@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Recorder</string>
+    <string name="app_name">Test Recorder</string>
+    <string name="copyright">Copyright © %d Qualcomm. All Right Reserved</string>
 </resources>
