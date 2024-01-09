@@ -1,11 +1,10 @@
 package com.jialin.recorder.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.os.Bundle;
 import android.widget.TextView;
 import android.Manifest;
-import android.os.Bundle;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -30,8 +29,8 @@ public class SplashActivity extends BaseActivity {
 
         //列好所有我们需要的权限
         List<String> perList = new ArrayList<>();
-        perList.add(Manifest.permission.CAMERA);
-        perList.add(Manifest.permission.BODY_SENSORS);
+        perList.add(Manifest.permission.RECORD_AUDIO);
+        perList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         perList.add(Manifest.permission.READ_EXTERNAL_STORAGE);
         //开始请求权限
         requestPermission(perList);
@@ -43,10 +42,10 @@ public class SplashActivity extends BaseActivity {
         super.throwPermissionResults(permissionName, isSuccess);
         //拿到相应的权限，以及授权结果
         switch (permissionName) {
-            case Manifest.permission.CAMERA:
+            case Manifest.permission.RECORD_AUDIO:
                 Log.d("fxHou", "CAMERA授权结果：" + isSuccess);
                 break;
-            case Manifest.permission.BODY_SENSORS:
+            case Manifest.permission.WRITE_EXTERNAL_STORAGE:
                 Log.d("fxHou", "BODY_SENSORS授权结果：" + isSuccess);
                 break;
             case Manifest.permission.READ_EXTERNAL_STORAGE:
